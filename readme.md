@@ -58,7 +58,16 @@ Definition:  How to instantiate objects at runtime
 * Defers object creation to multiple factories that share an interface
 * Derived classes implement or override the factory method of the base
 
+**Advantages:**
+* Eliminate references to concrete classes
+  * Factories
+  * Objects created by Factories
+* Factories can be inherited to provide even more specialized object creation
+* Rules for object initialization is centralized
 
+**Disadvantages:**
+* May need to create a factory just to get a concrete class delivered
+* The inheritance hierarchy gets deeper with coupling between concrete factories and created classes
 
 
 #### Structural Patterns

@@ -2,7 +2,7 @@
 
 namespace FactoryPatterns.Automobiles
 {
-    public class MiniCooper : IAuto
+    public class Audi : IAuto
     {
         public string Name { get; private set; }
 
@@ -18,12 +18,12 @@ namespace FactoryPatterns.Automobiles
 
         public void TurnOn()
         {
-            Console.WriteLine("The Mini Cooper is on!  1.6 liters of brutal force is churning.");
+            Console.WriteLine();
         }
 
         public void TurnOff()
         {
-            Console.WriteLine("The Mini Cooper is turned off.");
+            Console.WriteLine("The Audi TTS is turned off.");
         }
     }
 }

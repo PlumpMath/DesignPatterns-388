@@ -40,14 +40,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutoFactory.cs" />
-    <Compile Include="Automobiles\AudiTTS.cs" />
-    <Compile Include="Automobiles\BMW335Xi.cs" />
+    <Compile Include="Factories\AudiFactory.cs" />
+    <Compile Include="Factories\AutoFactory.cs" />
+    <Compile Include="Automobiles\Audi.cs" />
+    <Compile Include="Automobiles\BMW.cs" />
     <Compile Include="Automobiles\IAuto.cs" />
     <Compile Include="Automobiles\MiniCooper.cs" />
     <Compile Include="Automobiles\NullAuto.cs" />
+    <Compile Include="Factories\BmwFactory.cs" />
+    <Compile Include="Factories\IAutoFactory.cs" />
+    <Compile Include="Factories\LoadFactory.cs" />
+    <Compile Include="Factories\MiniCooperFactory.cs" />
+    <Compile Include="Factories\NullAutoFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Factories.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Factories.settings</DependentUpon>
+    </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Factories.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Factories.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

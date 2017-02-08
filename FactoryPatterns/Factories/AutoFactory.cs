@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using FactoryPatterns.Automobiles;
 
-namespace FactoryPatterns
+namespace FactoryPatterns.Factories
 {
     public class AutoFactory
     {

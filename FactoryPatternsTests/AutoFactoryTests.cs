@@ -1,6 +1,7 @@
 ﻿using System;
 using FactoryPatterns;
 using FactoryPatterns.Automobiles;
+using FactoryPatterns.Factories;
 using FluentAssertions;
 using Xunit;
 
@@ -9,8 +10,8 @@ namespace FactoryPatternsTests
     public class AutoFactoryTests
     {
         [Theory]
-        [InlineData("bmw", typeof(Bmw335Xi))]
-        [InlineData("audi", typeof(AudiTTS))]
+        [InlineData("bmw", typeof(BMW))]
+        [InlineData("audi", typeof(Audi))]
         [InlineData("mini", typeof(MiniCooper))]
         [InlineData("none", typeof(NullAuto))]
         [InlineData("", typeof(NullAuto))]
@@ -25,6 +26,20 @@ namespace FactoryPatternsTests
 
             //assert
             actualCar.Should().BeOfType(expectedCarType);
+        }
+
+        [Fact]
+        public void CreateAutomobile_ReturnsTheConfiguredIAutoInstance()
+        {
+            //arrange
+            IAutoFactory autoFactory = LoadFactory.GetInstance();
+            Type expectedAutomobileType = typeof(MiniCooper);
+
+            //act
+            IAuto actualAutomobile = autoFactory.CreateAutomobile();
+
+            //assert
+            actualAutomobile.Should().BeOfType(expectedAutomobileType);
         }
 
         [Fact]
