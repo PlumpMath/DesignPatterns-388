@@ -51,6 +51,15 @@ Definition:  How to instantiate objects at runtime
   * input or other dynamic data
 * Caller does know what concrete factory it needs
 
+##### Factory Method
+
+* "Define an interface for creating an object, but let the subclasses decide which class to instantiate.  Factory Method lets a class defer instantiation to subclasses."
+* Adds an interface to the factory itself from Simple Factory
+* Defers object creation to multiple factories that share an interface
+* Derived classes implement or override the factory method of the base
+
+
+
 
 #### Structural Patterns
 
