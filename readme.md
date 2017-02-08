@@ -69,6 +69,15 @@ Definition:  How to instantiate objects at runtime
 * May need to create a factory just to get a concrete class delivered
 * The inheritance hierarchy gets deeper with coupling between concrete factories and created classes
 
+##### Abstract Factory
+
+* "Provide an interface for creating families of related or dependent objects without specifying their concrete classes"
+* Factories create different types of concrete objects (products)
+* A Factory now represents a "family" of objects that it can create
+* Factories may have more than one factory method
+
+
+
 
 #### Structural Patterns
 
