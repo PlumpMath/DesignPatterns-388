@@ -76,6 +76,21 @@ Definition:  How to instantiate objects at runtime
 * A Factory now represents a "family" of objects that it can create
 * Factories may have more than one factory method
 
+#### Null Object Module
+
+##### Null Object Pattern
+
+**Intent:**
+* Rid program logic of null checks (guard clauses) where possible
+* Provide a non-functional object in place of a null reference
+* Allow methods to be called on Null objects, unlike a null reference
+
+**Objections/Criticism:**
+* Can make bugs/errors appear as normal program execution
+* In most cases no compiler error would occur when the Null Object is a reference type; could lead to run time errors instead of compile time errors
+* Some overhead involved in checking for Null Object versus checking for null(nil)
+* Must be used anywhere in the codebase where null is assigned currently -- otherwise there isn't a strong guarantee that the Null Object(s) will always be returned
+
 
 
 
