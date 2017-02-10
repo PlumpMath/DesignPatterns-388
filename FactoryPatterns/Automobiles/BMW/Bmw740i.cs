@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace FactoryPatterns.Automobiles
+namespace FactoryPatterns.Automobiles.BMW
 {
-    public class MiniCooper : IAuto
+    public class Bmw740i : IAuto
     {
         public string Name { get; private set; }
 
@@ -18,22 +18,12 @@ namespace FactoryPatterns.Automobiles
 
         public void TurnOn()
         {
-            Console.WriteLine($"The {Name} is on!  1.6 liters of brutal force is churning.");
+            Console.WriteLine($"The {Name} is on and running.");
         }
 
         public void TurnOff()
         {
             Console.WriteLine($"The {Name} is turned off.");
-        }
-
-        public void AddSportsPackage()
-        {
-            Name = "Mini Cooper S";
-        }
-
-        public void AddLuxuryPackage()
-        {
-            Console.WriteLine("Added leather seats");
         }
     }
 }

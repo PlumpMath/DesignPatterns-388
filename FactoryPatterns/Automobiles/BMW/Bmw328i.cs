@@ -1,20 +1,10 @@
 ﻿using System;
 
-namespace FactoryPatterns.Automobiles
+namespace FactoryPatterns.Automobiles.BMW
 {
-    public class BMW : IAuto
+    public class Bmw328i : IAuto
     {
         public string Name { get; private set; }
-
-        public BMW()
-        {
-            
-        }
-
-        public BMW(string name)
-        {
-            Name = name;
-        }
 
         public void SetName(string name)
         {

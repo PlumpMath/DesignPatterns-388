@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="AutoFactory" Type="System.String" Scope="User">
-      <Value Profile="(Default)">FactoryPatterns.Factories.MiniCooperFactory</Value>
+      <Value Profile="(Default)">FactoryPatterns.Factories.AbstractBmwFactory</Value>
     </Setting>
   </Settings>
 </SettingsFile>

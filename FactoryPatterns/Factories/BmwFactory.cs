@@ -1,4 +1,5 @@
 ﻿using FactoryPatterns.Automobiles;
+using FactoryPatterns.Automobiles.BMW;
 
 namespace FactoryPatterns.Factories
 {

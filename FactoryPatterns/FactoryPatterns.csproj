@@ -40,10 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Automobiles\BMW\BMW.cs" />
+    <Compile Include="Automobiles\BMW\Bmw328i.cs" />
+    <Compile Include="Automobiles\BMW\Bmw740i.cs" />
+    <Compile Include="Automobiles\BMW\BmwM3.cs" />
+    <Compile Include="Factories\AbstractBmwFactory.cs" />
+    <Compile Include="Factories\AbstractLoadFactory.cs" />
+    <Compile Include="Factories\AbstractMiniCooperFactory.cs" />
+    <Compile Include="Factories\AbstractNullAutoFactory.cs" />
     <Compile Include="Factories\AudiFactory.cs" />
     <Compile Include="Factories\AutoFactory.cs" />
     <Compile Include="Automobiles\Audi.cs" />
-    <Compile Include="Automobiles\BMW.cs" />
     <Compile Include="Automobiles\IAuto.cs" />
     <Compile Include="Automobiles\MiniCooper.cs" />
     <Compile Include="Automobiles\NullAuto.cs" />
@@ -58,6 +65,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Factories.settings</DependentUpon>
     </Compile>
+    <Compile Include="Factories\IAbstractAutoFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -66,7 +74,6 @@
       <LastGenOutput>Factories.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
